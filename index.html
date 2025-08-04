@@ -4,33 +4,133 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mon CV / Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 2em;
-      background-color: #f9f9f9;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    h1 { color: #333; }
-    section { margin-bottom: 2em; }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f3f4f6;
+      color: #111827;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #6b7280;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #374151;
+      border-bottom: 2px solid #d1d5db;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: "•";
+      color: #3b82f6;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .btn-cv {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #3b82f6;
+      color: #fff;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-cv:hover {
+      background-color: #2563eb;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Bonjour, je suis [Ton prénom] !</h1>
-  <p>Voici mon CV et mes projets en ligne.</p>
+  <div class="container">
+    <header>
+      <h1>REMACLE Gilles </h1>
+      <p>Stagiaire Architecte - Portfolio & CV</p>
+    </header>
 
-  <section>
-    <h2>CV</h2>
-    <p><a href="ton-cv.pdf" target="_blank">Télécharger mon CV</a></p>
-  </section>
+    <section>
+      <h2>📄 Mon CV</h2>
+      <a href="REMACLE_Gilles_CV_2025.pdf" target="_blank" class="btn-cv">Télécharger mon CV</a>
+    </section>
 
-  <section>
-    <h2>Portfolio</h2>
-    <ul>
-      <li>Projet 1 – description rapide</li>
-      <li>Projet 2 – description rapide</li>
-    </ul>
-  </section>
+    <section>
+      <h2>🚀 Mes Projets</h2>
+      <ul>
+        <li><strong>Projet 1 :</strong> une petite description sympa de ce que tu as fait.</li>
+        <li><strong>Projet 2 :</strong> une autre description rapide, ou un lien vers GitHub.</li>
+        <li><strong>Projet 3 :</strong> etc.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📬 Me contacter</h2>
+      <p>Email : <a href="mailto:Gilles.remacle@hotmail.com">Gilles.remacle@hotmail.com</a></p>
+      <p>GitHub : <a href="https://github.com/gillesremacle" target="_blank">@gillesremacle</a></p>
+    </section>
+  </div>
 </body>
 </html>
