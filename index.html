@@ -3,134 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mon CV / Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f3f4f6;
-      color: #111827;
-      line-height: 1.6;
-      padding: 2rem;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      color: #1f2937;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      color: #6b7280;
-    }
-
-    section {
-      margin-bottom: 2.5rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      color: #374151;
-      border-bottom: 2px solid #d1d5db;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 1rem;
-    }
-
-    ul li::before {
-      content: "•";
-      color: #3b82f6;
-      font-weight: bold;
-      display: inline-block; 
-      width: 1em;
-      margin-left: -1em;
-    }
-
-    .btn-cv {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      background-color: #3b82f6;
-      color: #fff;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn-cv:hover {
-      background-color: #2563eb;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      .container {
-        padding: 1.5rem;
-      }
-    }
-  </style>
+  <title>Accueil - Gilles Remacle</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>REMACLE Gilles </h1>
-      <p>Stagiaire Architecte - Portfolio & CV</p>
-    </header>
 
-    <section>
-      <h2>📄 Mon CV</h2>
-      <a href="REMACLE_Gilles_CV_2025.pdf" target="_blank" class="btn-cv">Télécharger mon CV</a>
-    </section>
+  <!-- Section principale : intro + photo -->
+  <section class="container hero">
+    <div class="hero-left">
+      <h1>Gilles Remacle</h1>
+      <h2>Architecte stagiaire</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor, justo ac sodales blandit, sem purus porta nisi, ac elementum leo nisi nec libero.</p>
+    </div>
+    <div class="hero-right">
+      <!-- Remplace par ton image -->
+      <img src="assets/photo-jury.jpg" alt="Photo jury architecture" class="portrait">
+    </div>
+  </section>
 
-    <section>
-      <h2>🚀 Mes Projets</h2>
-      <ul>
-        <li><strong>Projet 1 :</strong> une petite description sympa de ce que tu as fait.</li>
-        <li><strong>Projet 2 :</strong> une autre description rapide, ou un lien vers GitHub.</li>
-        <li><strong>Projet 3 :</strong> etc.</li>
-      </ul>
-    </section>
+  <!-- Début CV (section visible en transparence dès la fin de l’intro) -->
+  <section class="container cv-preview-section">
+    <h2 class="cv-title transparent">Curriculum Vitae</h2>
+    <div class="cv-preview">
+      <iframe src="assets/REMACLE_Gilles_CV_2025.pdf"></iframe>
+      <a href="assets/REMACLE_Gilles_CV_2025.pdf" target="_blank" class="btn">Télécharger mon CV</a>
+    </div>
+  </section>
 
-    <section>
-      <h2>📬 Me contacter</h2>
-      <p>Email : <a href="mailto:Gilles.remacle@hotmail.com">Gilles.remacle@hotmail.com</a></p>
-      <p>GitHub : <a href="https://github.com/gillesremacle" target="_blank">@gillesremacle</a></p>
-    </section>
-  </div>
+  <!-- Barre de navigation fixe en bas -->
+  <nav class="bottom-nav">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
+
 </body>
 </html>
