@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root {
+  --jaune: #f3e39e;
+  --gris-clair: #f8f8f5;
+  --gris-texte: #444;
+  --gris-foncé: #222;
+  --blanc: #ffffff;
+}
+
+/* Reset & structure */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  background-color: var(--gris-clair);
+  color: var(--gris-texte);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gris-foncé);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--gris-foncé);
+  margin-bottom: 1rem;
+}
+
+p, li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+/* section 1 */
+.intro-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.intro-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-image img {
+  max-width: 100%;
+  max-height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* section 2 */
+.competence-graphic img,
+.cv-download img {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.cv-download p {
+  margin-top: 1rem;
+}
+
+.cv-download a {
+  text-decoration: underline;
+  color: var(--gris-foncé);
+  font-weight: 500;
+}
+
+/* Section 3 */
+.memoire-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.memoire-cover {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Pastille
+.page-switcher {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+
+.page-switcher ul {
+  display: inline-flex;
+  gap: 40px;
+  position: relative;
+  background: #ddd;
+  border-radius: 30px;
+  padding: 10px 20px;
+  list-style: none;
+}
+
+.page-switcher li {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-weight: 600;
+  color: var(--gris-foncé);
+}
+
+.page-switcher .switch-indicator {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  width: 100px;
+  height: 6px;
+  background: var(--gris-foncé);
+  border-radius: 6px;
+  transition: left 0.4s ease;
+  z-index: 1;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+  }
+
+  .competence-graphic img,
+  .cv-download img {
+    width: 100%;
+    height: auto;
+  }
+
+  .page-switcher ul {
+    gap: 20px;
+    padding: 8px 16px;
+  }
+
+  .page-switcher .switch-indicator {
+    width: 80px;
+  }
+}
