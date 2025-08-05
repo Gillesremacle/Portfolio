@@ -169,11 +169,14 @@ ul {
 
 .page-switcher ul {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   gap: 40px;
   position: relative;
-  background: #e0e0e0;
+  background-color: var(--jaune);
   border-radius: 999px;
-  padding: 12px 24px;
+  padding: 5px 40px;
+  height: 70px;
   list-style: none;
   margin: 0 auto;
 }
@@ -182,11 +185,15 @@ ul {
 .page-switcher li a {
   position: relative;
   z-index: 2;
-  cursor: pointer;
-  padding: 6px 12px;
   font-weight: 600;
   color: var(--gris-foncé);
   text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .page-switcher li.active {
@@ -195,12 +202,12 @@ ul {
 
 .page-switcher .switch-indicator {
   position: absolute;
-  bottom: 5px;
+  top: 5px;
   left: 12px;
-  width: 100px;
-  height: 6px;
-  background: var(--gris-foncé);
-  border-radius: 6px;
+  width: 120px;
+  height: 60px;
+  background-color: var(--gris-clair);
+  border-radius: 999px;
   transition: left 0.4s ease;
   z-index: 1;
 }
