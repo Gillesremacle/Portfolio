@@ -70,12 +70,36 @@ ul {
   justify-content: center;
   align-items: center;
 }
+.section-presentation {
+  padding: 100px 50px;
+  background-color: var(--gris-clair);
+}
+
+.presentation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.bordered-yellow {
+  background-color: var(--jaune);
+  padding: 40px;
+  width: 50%;
+}
+
+.bordered-grey {
+  background-color: #d8d8d8;
+  padding: 20px;
+  width: 40%;
+}
 
 .intro-image img {
   max-width: 100%;
   max-height: 500px;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  box-shadow: none;
 }
 
 /* section 2 */
