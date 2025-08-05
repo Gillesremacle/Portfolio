@@ -25,14 +25,9 @@ body {
 }
 
 section {
-    padding: 80px 20px;
+  padding: 80px 20px;
   max-width: 1200px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
 }
 
 h1 {
@@ -58,18 +53,7 @@ ul {
   padding-left: 1.5rem;
 }
 
-/* section 1 */
-.intro-text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.intro-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* --- SECTION 1 : Présentation --- */
 .section-presentation {
   padding: 100px 50px;
   background-color: var(--gris-clair);
@@ -79,20 +63,32 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 40px;
   align-items: flex-start;
+  gap: 40px;
 }
 
 .bordered-yellow {
   background-color: var(--jaune);
   padding: 40px;
   width: 50%;
+  box-sizing: border-box;
 }
 
 .bordered-grey {
   background-color: #d8d8d8;
   padding: 20px;
   width: 40%;
+  box-sizing: border-box;
+}
+
+.intro-text {
+  min-width: 300px;
+}
+
+.intro-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-image img {
@@ -102,7 +98,15 @@ ul {
   box-shadow: none;
 }
 
-/* section 2 */
+/* --- SECTION 2 : CV et compétences --- */
+.section-cv {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
 .competence-graphic img,
 .cv-download img {
   width: 600px;
@@ -122,7 +126,15 @@ ul {
   font-weight: 500;
 }
 
-/* Section 3 */
+/* --- SECTION 3 : Mémoire --- */
+.section-memoire {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
 .memoire-text {
   flex: 1;
   min-width: 300px;
@@ -133,7 +145,14 @@ ul {
   min-width: 300px;
 }
 
-/* Pastille
+.memoire-cover img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* --- Pastille de navigation --- */
+/*
 .page-switcher {
   position: fixed;
   bottom: 20px;
@@ -172,13 +191,15 @@ ul {
   transition: left 0.4s ease;
   z-index: 1;
 }
+*/
 
-/* Responsive */
+/* --- Responsive --- */
 @media screen and (max-width: 768px) {
-  section {
+  .presentation-container,
+  .section-cv,
+  .section-memoire {
     flex-direction: column;
     align-items: center;
-    padding: 60px 20px;
   }
 
   .competence-graphic img,
