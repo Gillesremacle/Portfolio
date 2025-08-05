@@ -159,10 +159,9 @@ ul {
 }
 
 /* --- Pastille de navigation --- */
-/*
 .page-switcher {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   width: 100%;
   text-align: center;
   z-index: 999;
@@ -172,25 +171,32 @@ ul {
   display: inline-flex;
   gap: 40px;
   position: relative;
-  background: #ddd;
-  border-radius: 30px;
-  padding: 10px 20px;
+  background: #e0e0e0;
+  border-radius: 999px;
+  padding: 12px 24px;
   list-style: none;
+  margin: 0 auto;
 }
 
-.page-switcher li {
+.page-switcher li,
+.page-switcher li a {
   position: relative;
   z-index: 2;
   cursor: pointer;
-  padding: 6px 10px;
+  padding: 6px 12px;
   font-weight: 600;
   color: var(--gris-foncé);
+  text-decoration: none;
+}
+
+.page-switcher li.active {
+  font-weight: 700;
 }
 
 .page-switcher .switch-indicator {
   position: absolute;
   bottom: 5px;
-  left: 10px;
+  left: 12px;
   width: 100px;
   height: 6px;
   background: var(--gris-foncé);
@@ -198,7 +204,6 @@ ul {
   transition: left 0.4s ease;
   z-index: 1;
 }
-*/
 
 /* --- Responsive --- */
 @media screen and (max-width: 768px) {
