@@ -51,7 +51,14 @@ p, li {
   margin-bottom: 1rem;
 }
 
-/* --- SECTION 1 : Présentation --- */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- SECTION 1 --- */
 .section-presentation {
   padding: 100px 50px 50px 50px;
   background-color: var(--blanc);
@@ -75,16 +82,6 @@ p, li {
   box-sizing: border-box;
 }
 
-.bordered-yellow {
-  background-color: var(--jaune);
-  padding: 40px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
 .intro-text {
   min-width: 300px;
 }
@@ -95,14 +92,6 @@ p, li {
   align-items: center;
 }
 
-.intro-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 0;
-  box-shadow: none;
-  object-fit: cover;
-}
-
 /* --- SECTION 2 : CV et compétences --- */
 .section-cv {
   display: flex;
@@ -110,15 +99,6 @@ p, li {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 40px;
-}
-
-.competence-graphic img,
-.cv-download img {
-  width: 600px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .cv-download p {
@@ -131,7 +111,7 @@ p, li {
   font-weight: 500;
 }
 
-/* --- SECTION 3 : Mémoire --- */
+/* --- SECTION 3 --- */
 .section-memoire {
   display: flex;
   justify-content: space-between;
@@ -150,13 +130,7 @@ p, li {
   min-width: 300px;
 }
 
-.memoire-cover img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* --- Pastille de navigation --- */
+/* --- Pastille --- */
 .page-switcher {
   position: fixed;
   bottom: 30px;
@@ -226,12 +200,6 @@ p, li {
   .section-memoire {
     flex-direction: column;
     align-items: center;
-  }
-
-  .competence-graphic img,
-  .cv-download img {
-    width: 100%;
-    height: auto;
   }
 
   .page-switcher ul {
