@@ -51,7 +51,6 @@ p, li {
   margin-bottom: 1rem;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -62,6 +61,7 @@ img {
 .section-presentation {
   padding: 100px 50px 50px 50px;
   background-color: var(--blanc);
+  position: relative;
 }
 
 .presentation-container {
@@ -73,13 +73,27 @@ img {
 }
 
 .bordered-yellow {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 960px;
+  height: 600px;
   background-color: var(--jaune);
-  padding: 40px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   box-sizing: border-box;
+}
+
+.bordered-yellow h1 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  margin: 0;
+}
+
+.bordered-yellow h2 {
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  margin: 0;
 }
 
 .intro-text {
@@ -150,7 +164,7 @@ img {
   border-radius: 999px;
   list-style: none;
   margin: 0 auto;
-  gap: 30;
+  gap: 30px;
   position: relative;
 }
 
@@ -181,7 +195,7 @@ img {
   left: 5px;
   width: 160px;
   height: 70px;
-  background-color: var(--gris-clair); /* #696462 */
+  background-color: var(--gris-clair);
   border-radius: 999px;
   transition: left 0.4s ease;
   z-index: 1;
@@ -194,6 +208,19 @@ img {
   .section-memoire {
     flex-direction: column;
     align-items: center;
+  }
+
+  .bordered-yellow {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .bordered-yellow h1,
+  .bordered-yellow h2 {
+    position: static;
+    margin-bottom: 1rem;
   }
 
   .page-switcher ul {
