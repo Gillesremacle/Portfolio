@@ -169,10 +169,9 @@ img {
   margin: 0;
   padding: 0;
   z-index: 2;
+  .portfolio-item {
+  margin-left: -5px;
 }
-
-.portfolio-link {
-  margin-left: -50px;
 }
 
 .page-switcher .switch-indicator {
