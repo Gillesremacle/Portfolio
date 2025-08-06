@@ -66,19 +66,19 @@ img {
 
 .presentation-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 40px;
 }
 
+.intro-left {
+  width: 60%;
+}
+
 .bordered-yellow {
-  position: absolute;
-  top: 250px;
-  left: 0;
-  width: 960px;
-  height: 600px;
   background-color: var(--jaune);
+  padding: 40px;
+  margin-top: 30px;
   box-sizing: border-box;
 }
 
