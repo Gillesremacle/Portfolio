@@ -172,7 +172,7 @@ img {
 }
 
 .portfolio-item {
-  margin-left: -10px;
+  ransform: translateX(-10px);
 }
 
 .page-switcher .switch-indicator {
