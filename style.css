@@ -156,28 +156,18 @@ img {
 
 .page-switcher li,
 .page-switcher li a {
-  z-index: 2;
-  font-weight: 600;
+  font-size: 53px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   color: var(--gris-foncé);
   text-decoration: none;
-  text-align: center;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-  padding: 0;
+  height: 80px;
   margin: 0;
-}
-
-.page-switcher li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.page-switcher li.active {
-  font-weight: 700;
+  padding: 0;
+  z-index: 2;
 }
 
 .page-switcher .switch-indicator {
