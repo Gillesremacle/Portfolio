@@ -171,8 +171,8 @@ img {
   z-index: 2;
 }
 
-.page-switcher li:nth-child(2) {
-  margin-left: -10px;
+.portfolio-link {
+  margin-left: -5px;
 }
 
 .page-switcher .switch-indicator {
