@@ -171,6 +171,10 @@ img {
   z-index: 2;
 }
 
+.page-switcher li:nth-child(2) {
+  margin-left: -5px;
+}
+
 .page-switcher .switch-indicator {
   position: absolute;
   top: 5px;
